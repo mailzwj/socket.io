@@ -4,9 +4,7 @@ Socket.IO is a Node.JS project that makes WebSockets and realtime possible in
 all browsers. It also enhances WebSockets by providing built-in multiplexing,
 horizontal scalability, automatic JSON encoding/decoding, and more.
 
-Socket.IO是一个让所有浏览器支持WebSockets和实时通信成为可能的Node.JS项目。这也
-增强了通过提供内置多线程(实现)的WebSockets，横向可扩展性，自动JSON编码/解码，等
-等。
+Socket.IO是一个让所有浏览器支持WebSockets和实时通信成为可能的Node.JS项目。这也增强了通过提供内置多线程(实现)的WebSockets，横向可扩展性，自动JSON编码/解码，等等。
 
 ## How to Install
 
@@ -18,12 +16,16 @@ npm install socket.io
 
 First, require `socket.io`:
 
+首先，require `socket.io`：
+
 ```js
 var io = require('socket.io');
 ```
 
 Next, attach it to a HTTP/HTTPS server. If you're using the fantastic `express`
 web framework:
+
+然后，把它连接到一个http/https服务器。如果你正使用神奇的`express`web框架：
 
 #### Express 3.x
 
@@ -60,6 +62,8 @@ io.sockets.on('connection', function (socket) {
 
 Finally, load it from the client side code:
 
+最后，在客户端代码中加载它：
+
 ```html
 <script src="/socket.io/socket.io.js"></script>
 <script>
@@ -73,12 +77,19 @@ Finally, load it from the client side code:
 
 For more thorough examples, look at the `examples/` directory.
 
+对于更深入的案例，查看`examples/`目录。
+
 ## Short recipes
 
 ### Sending and receiving events.
 
 Socket.IO allows you to emit and receive custom events.
+
+Sicket.IO允许你emit和receive自定义事件。
+
 Besides `connect`, `message` and `disconnect`, you can emit custom events:
+
+除了`connect`，`message`和`disconnect`，你还可以emit自定义事件：
 
 ```js
 // note, io.listen(<port>) will create a http server for you
@@ -101,6 +112,8 @@ io.sockets.on('connection', function (socket) {
 
 Sometimes it's necessary to store data associated with a client that's
 necessary for the duration of the session.
+
+有时候，需要依赖持续的会话session存储与客户端相关联的数据。
 
 #### Server side
 
