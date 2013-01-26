@@ -4,6 +4,10 @@ Socket.IO is a Node.JS project that makes WebSockets and realtime possible in
 all browsers. It also enhances WebSockets by providing built-in multiplexing,
 horizontal scalability, automatic JSON encoding/decoding, and more.
 
+Socket.IO是一个让所有浏览器支持WebSockets和实时通信成为可能的Node.JS项目。这也
+增强了通过提供内置多线程(实现)的WebSockets，横向可扩展性，自动JSON编码/解码，等
+等。
+
 ## How to Install
 
 ```bash
