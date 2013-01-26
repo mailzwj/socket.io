@@ -223,7 +223,7 @@ to bieber your application won't suffer.
 
 In that case, you might want to send those messages as volatile messages.
 
-在这种情形下，你可能想要发送这些易失的信息。
+（但是）在这种情形下，你可能想要发送这些易失的信息。
 
 #### Server side
 
